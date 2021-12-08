@@ -232,7 +232,7 @@
 
                 UpdateStatus("Grabbing XeLL Data...");
                 if(TargetXeLLData == null && !string.IsNullOrEmpty(TargetXeLLPath))
-                    TargetCDData = File.ReadAllBytes(TargetXeLLPath);
+                    TargetXeLLData = File.ReadAllBytes(TargetXeLLPath);
                 else if(TargetXeLLData == null && string.IsNullOrEmpty(TargetXeLLPath)) {
                     UpdateStatus("Using Built in XeLL");
                     TargetXeLLData = GetBuiltInData("XELL");
