@@ -92,7 +92,7 @@
                 ECCGenerator.UpdateStatus(string.Format("Padding to XeLL Offset: 0x{0:X} Size: 0x{1:X}", ECCData.Count, Xellbase - ECCData.Count));
                 PadToFlash(Xellbase);
             }
-            ECCGenerator.UpdateStatus(string.Format("Adding KV Offset: 0x{0:X} Size: 0x{1:X}", ECCData.Count, data.Length));
+            ECCGenerator.UpdateStatus(string.Format("Adding XeLL Offset: 0x{0:X} Size: 0x{1:X}", ECCData.Count, data.Length));
             ECCData.AddRange(data);
         }
     }
